@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <Switch
-        android:id="@+id/switch1"
+        android:id="@+id/s1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -18,7 +18,7 @@
         app:layout_constraintVertical_bias="0.353" />
 
     <Switch
-        android:id="@+id/switch2"
+        android:id="@+id/s2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -29,7 +29,7 @@
         app:layout_constraintVertical_bias="0.353" />
 
     <Switch
-        android:id="@+id/switch3"
+        android:id="@+id/s3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -40,7 +40,7 @@
         app:layout_constraintVertical_bias="0.353" />
 
     <Switch
-        android:id="@+id/switch4"
+        android:id="@+id/s4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -51,7 +51,7 @@
         app:layout_constraintVertical_bias="0.467" />
 
     <Switch
-        android:id="@+id/switch5"
+        android:id="@+id/s5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -62,7 +62,7 @@
         app:layout_constraintVertical_bias="0.467" />
 
     <Switch
-        android:id="@+id/switch6"
+        android:id="@+id/s6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -73,7 +73,7 @@
         app:layout_constraintVertical_bias="0.467" />
 
     <Switch
-        android:id="@+id/switch7"
+        android:id="@+id/s7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -84,7 +84,7 @@
         app:layout_constraintVertical_bias="0.589" />
 
     <Switch
-        android:id="@+id/switch8"
+        android:id="@+id/s8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -95,7 +95,7 @@
         app:layout_constraintVertical_bias="0.589" />
 
     <Switch
-        android:id="@+id/switch9"
+        android:id="@+id/s9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -106,7 +106,7 @@
         app:layout_constraintVertical_bias="0.589" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/losuj"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Losuj"
@@ -118,7 +118,7 @@
         app:layout_constraintVertical_bias="0.767" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/sortuj"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Sortuj"
@@ -130,7 +130,7 @@
         app:layout_constraintVertical_bias="0.767" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
