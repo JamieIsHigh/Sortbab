@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.Switch
 import android.widget.TextView
+import java.util.Collections.swap
 import kotlin.random.Random
 
 class MainActivity : AppCompatActivity() {
@@ -43,6 +44,21 @@ class MainActivity : AppCompatActivity() {
                 wartoscidobre.remove(0)
             text.text = sort(wartoscidobre).toString()
 
+        }
+        fun sort(arr: MutableList<Int>): MutableList<Int> {
+            var swappedElements : Boolean
+            var level = arr.size - 1
+            do {
+                swappedElements = false
+                for (i in 0..level - 1){
+                    if (arr[i] > arr[i + 1]){
+                        swap(arr, i, i + 1)
+                        swappedElements = true
+                    }
+                }
+                level--
+            } while (swappedElements)
+            return arr
         }
     }
 }
