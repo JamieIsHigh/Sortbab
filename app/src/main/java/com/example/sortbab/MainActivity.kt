@@ -19,7 +19,21 @@ class MainActivity : AppCompatActivity() {
 
         var list1 = arrayOf(0, 0, 0, 0, 0, 0, 0, 0, 0)
         var list2: Array<Switch> = arrayOf(findViewById(R.id.s1), findViewById(R.id.s2), findViewById(R.id.s3), findViewById(R.id.s4), findViewById(R.id.s5), findViewById(R.id.s6), findViewById(R.id.s7), findViewById(R.id.s8), findViewById(R.id.s9),)
-
+        fun sort(arr: MutableList<Int>): MutableList<Int> {
+            var swappedElements : Boolean
+            var level = arr.size - 1
+            do {
+                swappedElements = false
+                for (i in 0..level - 1){
+                    if (arr[i] > arr[i + 1]){
+                        swap(arr, i, i + 1)
+                        swappedElements = true
+                    }
+                }
+                level--
+            } while (swappedElements)
+            return arr
+        }
         los.setOnClickListener {
             for (i in 0..8) {
                 var ran = Random.nextInt(1, 9);
@@ -45,20 +59,6 @@ class MainActivity : AppCompatActivity() {
             text.text = sort(wartoscidobre).toString()
 
         }
-        fun sort(arr: MutableList<Int>): MutableList<Int> {
-            var swappedElements : Boolean
-            var level = arr.size - 1
-            do {
-                swappedElements = false
-                for (i in 0..level - 1){
-                    if (arr[i] > arr[i + 1]){
-                        swap(arr, i, i + 1)
-                        swappedElements = true
-                    }
-                }
-                level--
-            } while (swappedElements)
-            return arr
-        }
+
     }
 }
